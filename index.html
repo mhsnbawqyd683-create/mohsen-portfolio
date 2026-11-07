@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" type="image/png" href="شعار التبويب الموقع.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="محسن سالم علي باوقيد — مبرمج ومطور مواقع ويب من شبوة، اليمن.">
+  <title>محسن باوقيد | مطور مواقع الويب</title>
+  <style>
+    :root{--bg:#07111f;--panel:#0d1b2e;--panel2:#10243b;--blue:#55b7ff;--cyan:#80e2e8;--white:#f5f8ff;--muted:#b3c0d2;--line:#ffffff18}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--white);line-height:1.85}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#07111feF;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:74px}
+    .logo{font-weight:900;font-size:1.25rem}.logo span{color:var(--blue)}
+    nav{display:flex;gap:22px;font-size:.94rem;color:var(--muted)}
+    nav a:hover{color:var(--cyan)}
+    .button{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:12px;font-weight:800;transition:.2s}
+    .primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#07111f}
+    .secondary{border:1px solid #ffffff35;color:var(--white)}
+    .hero{padding:90px 0 75px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 10% 15%,#12436b77,transparent 38%),radial-gradient(ellipse at 90% 70%,#0c5b6760,transparent 35%)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
+    .pill{display:inline-block;border:1px solid #55b7ff55;background:#55b7ff12;color:var(--cyan);padding:5px 13px;border-radius:100px;font-size:.9rem}
+    h1{font-size:clamp(2.4rem,5.3vw,4.6rem);line-height:1.2;margin:18px 0}
+    h1 span{color:var(--blue)}
+    .hero p{font-size:1.1rem;color:var(--muted);max-width:620px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+    .profile-card{border:1px solid var(--line);background:linear-gradient(145deg,#ffffff0c,#ffffff03);border-radius:28px;padding:28px;min-height:310px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;box-shadow:0 30px 80px #0003}
+    .avatar{width:112px;height:112px;border-radius:30px;display:grid;place-items:center;font-size:2.8rem;font-weight:900;color:#07111f;background:linear-gradient(135deg,var(--blue),var(--cyan));transform:rotate(-3deg);margin-bottom:18px}
+    .profile-card h2{margin:0;font-size:1.5rem}.profile-card p{margin:5px 0;color:var(--muted)}
+    .status{margin-top:12px;color:var(--cyan);font-size:.9rem}
+    section{padding:70px 0}
+    .section-title{margin-bottom:30px}.eyebrow{color:var(--blue);font-weight:900}.section-title h2{font-size:clamp(1.8rem,3vw,2.5rem);margin:5px 0}.section-title p{color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:25px}
+    .panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:27px}
+    .panel p{color:var(--muted);margin:0 0 12px}
+    .quote{font-size:1.35rem;font-weight:800;line-height:1.7;border-right:3px solid var(--blue);padding-right:18px}
+    .facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+    .fact{background:#ffffff06;border:1px solid var(--line);border-radius:13px;padding:13px}
+    .fact small{display:block;color:var(--muted)}.fact strong{font-size:.98rem}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .skill{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:23px;transition:transform .2s,border-color .2s}
+    .skill:hover{transform:translateY(-4px);border-color:#55b7ff70}
+    .skill .symbol{font-size:1.7rem;color:var(--blue);font-weight:900}
+    .skill h3{margin:8px 0 5px}.skill p{color:var(--muted);font-size:.93rem;margin:0}
+    .journey{background:linear-gradient(135deg,#0b1a2d,#0b293c);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .journey-inner{max-width:800px;margin:auto;text-align:center}.journey-inner p{color:var(--muted);font-size:1.05rem}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}
+    .contact-card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:25px}
+    .contact-row{padding:14px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+    .contact-row:last-child{border:0}.contact-row small{display:block;color:var(--muted)}.contact-row strong{direction:ltr;unicode-bidi:embed;display:inline-block}
+    .contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    footer{padding:25px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+    .footer-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media(max-width:780px){nav{display:none}.hero{padding:60px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.profile-card{min-height:250px}.skills{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}section{padding:55px 0}}
+.avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 2px solid #00d9ff;
+  box-shadow: 0 0 20px #00d9ff55;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+  </style>
+  <link rel="stylesheet" href="services.css">
+  <script ></script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo">محسن <span>باوقيد</span></a>
+    <nav><a href="#about">نبذة عني</a><a href="#skills">مهاراتي</a><a href="#journey">رحلتي</a><a href="#contact">تواصل معي</a></nav>
+    <a class="button secondary" href="#contact">تواصل معي</a>
+    <a href="services.html">خدماتي</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="pill">مبرمج ومطور مواقع ويب</span>
+        <h1>أحوّل الأفكار إلى<br><span>مواقع ويب</span></h1>
+        <p>أنا محسن سالم علي باوقيد، من شبوة في اليمن. بدأت رحلتي في تعلم تطوير الويب منذ أشهر، وأعمل باستمرار على تطوير مهاراتي وبناء تجارب ويب عملية. البداية مستمرة، والقادم أفضل بإذن الله.</p>
+        <div class="actions">
+          <a class="button primary" href="#contact">هل تريد التواصل معي؟</a>
+          <a class="button secondary" href="#skills">تعرّف على مهاراتي</a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="avatar">
+  <img src="photo_2026-11-07_13-28-17.jpg" alt="محسن باوقيد">
+</div>
+        <h2>محسن باوقيد</h2>
+        <p>مطور مواقع ويب مبتدئ</p>
+        <div class="status">● أتعلم، أطبّق، وأتطوّر كل يوم</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-title"><span class="eyebrow">نبذة شخصية</span><h2>هل تريد التعرّف عليّ؟</h2><p>خطوات ثابتة نحو بناء خبرة حقيقية في تطوير المواقع.</p></div>
+      <div class="about-grid">
+        <div class="panel">
+          <p>أؤمن أن البداية لا تحتاج إلى أن تكون مثالية؛ تحتاج إلى تعلّم مستمر وتطبيق وصبر. بدأت تعلّم البرمجة قبل أشهر، وأركّز على أساسيات بناء صفحات الويب وتطويرها، وأسعى إلى تحويل ما أتعلمه إلى مشاريع عملية تفيد العملاء.</p>
+          <div class="quote">«كل مشروع جديد فرصة للتعلّم، وكل خطوة تقرّبني من الأفضل بإذن الله.»</div>
+        </div>
+        <div class="panel">
+          <h3 style="margin-top:0">معلومات عني</h3>
+          <div class="facts">
+            <div class="fact"><small>الاسم الكامل</small><strong>محسن سالم علي باوقيد</strong></div>
+            <div class="fact"><small>المجال</small><strong>تطوير مواقع الويب</strong></div>
+            <div class="fact"><small>الموقع</small><strong>شبوة، اليمن</strong></div>
+            <div class="fact"><small>بداية التعلّم</small><strong>منذ أشهر</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="background:#091625">
+    <div class="container">
+      <div class="section-title"><span class="eyebrow">مهاراتي التقنية</span><h2>اللغات التي أتعلمها وأستخدمها</h2><p>أطوّر معرفتي بهذه التقنيات من خلال التعلّم والتطبيق العملي.</p></div>
+      <div class="skills">
+        <article class="skill"><div class="symbol">HTML</div><h3>بناء صفحات الويب</h3><p>تنظيم محتوى الصفحة وبناء هيكل واضح باستخدام HTML.</p></article>
+        <article class="skill"><div class="symbol">CSS</div><h3>تنسيق وتصميم الصفحات</h3><p>تحسين المظهر والألوان والتخطيطات وجعل الصفحات مناسبة للجوال.</p></article>
+        <article class="skill"><div class="symbol">JS</div><h3>التفاعل والوظائف</h3><p>تعلّم JavaScript لإضافة التفاعل والسلوك الديناميكي إلى المواقع.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="journey" id="journey">
+    <div class="container journey-inner">
+      <span class="eyebrow">رحلتي في البرمجة</span>
+      <h2>بدأت منذ أشهر… وما زالت الرحلة في بدايتها</h2>
+      <p>محسن بدأ يتعلم تطوير الويب منذ فترة قصيرة، ويواصل بناء مهاراته خطوة بخطوة. الطموح هو الاستمرار في التعلّم، وإنجاز مشاريع أفضل، وتقديم عمل يتطور مع كل تجربة.</p>
+      <p style="color:var(--cyan);font-weight:900;font-size:1.25rem">والقادم أفضل بإذن الله.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title"><span class="eyebrow">تواصل معي</span><h2>هل لديك فكرة لموقع؟</h2><p>يسعدني استقبال استفسارك والتعرّف على فكرتك.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3 style="margin-top:0">بيانات التواصل</h3>
+          <div class="contact-row"><small>الهاتف / واتساب</small><strong>779563062</strong></div>
+          <div class="contact-row"><small>البريد الإلكتروني</small><strong style="text-transform:none">mhsnbawqyd683@gmail.com</strong></div>
+          <div class="contact-row"><small>الموقع</small><strong style="direction:rtl">شبوة — اليمن</strong></div>
+          <div class="contact-actions">
+            <a class="button primary" href="https://wa.me/96779563062" target="_blank" rel="noopener">راسلني على واتساب</a>
+            <a class="button secondary" href="mailto:mhsnbawqyd683@gmail.com">إرسال بريد إلكتروني</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h3 style="margin-top:0">رسالة ترحيبية</h3>
+          <p style="color:var(--muted)">هل تريد التعرف أكثر على محسن أو مناقشة فكرة موقع ويب؟ تواصل معي عبر واتساب أو البريد الإلكتروني، وأخبرني عن مشروعك وما ترغب في بنائه.</p>
+          <p style="color:var(--cyan);font-weight:800">شكرًا لزيارتك موقعي الشخصي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container footer-row">
+    <span>© <span id="year"></span> محسن سالم علي باوقيد — جميع الحقوق محفوظة</span>
+    <span>تصميم وتطوير شخصي · شبوة، اليمن</span>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
